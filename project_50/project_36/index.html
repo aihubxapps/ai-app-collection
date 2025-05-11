@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAIチャットUI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>OpenAIチャットUI</h1>
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <!-- メッセージがここに追加されます -->
+            </div>
+            <div class="chat-input">
+                <textarea id="messageInput" placeholder="メッセージを入力..."></textarea>
+                <button id="sendButton">送信</button>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="clearButton">会話をクリア</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/dotenv@16.0.3/lib/main.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

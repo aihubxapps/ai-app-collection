@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#editor {
+    width: 50%;
+    height: 30vh;
+    font-size: 1.2em;
+    padding: 1em;
+    resize: vertical;
+    margin-bottom: 20px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}

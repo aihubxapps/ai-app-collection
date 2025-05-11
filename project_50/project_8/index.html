@@ -1,0 +1,46 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>シンプル家計簿</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>シンプル家計簿</h1>
+        
+        <!-- 収入入力 -->
+        <div class="section income">
+            <h2>収入</h2>
+            <input type="text" id="incomeDesc" placeholder="説明">
+            <input type="number" id="incomeAmount" placeholder="金額">
+            <button onclick="addEntry('income')">追加</button>
+        </div>
+
+        <!-- 支出入力 -->
+        <div class="section expense">
+            <h2>支出</h2>
+            <input type="text" id="expenseDesc" placeholder="説明">
+            <input type="number" id="expenseAmount" placeholder="金額">
+            <button onclick="addEntry('expense')">追加</button>
+        </div>
+
+        <!-- 結果表示 -->
+        <div class="summary">
+            <h2>合計</h2>
+            <p>収入: ¥<span id="totalIncome">0</span></p>
+            <p>支出: ¥<span id="totalExpense">0</span></p>
+            <p>残高: ¥<span id="balance">0</span></p>
+        </div>
+
+        <!-- 明細表示 -->
+        <div class="entries">
+            <h2>明細</h2>
+            <ul id="entryList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

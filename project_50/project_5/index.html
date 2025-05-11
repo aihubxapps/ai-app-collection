@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRコードジェネレーター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>QRコードジェネレーター</h1>
+        <input type="text" id="qr-text" placeholder="URLまたはテキストを入力">
+        <button id="generate-qr">QRコードを生成</button>
+        <div id="qr-code-container">
+            <canvas id="qr-code"></canvas>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

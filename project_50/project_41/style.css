@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+.main-content {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.search-section {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.results-section {
+    padding: 20px;
+}
+
+.search-results {
+    margin-bottom: 20px;
+}
+
+.track-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.track-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.track-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.track-info {
+    flex: 1;
+}
+
+.track-name {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.track-artist {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.genre-analysis {
+    margin-top: 30px;
+}
+
+.genre-chart {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.recommendations {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.recommendation-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.recommendation-item:last-child {
+    border-bottom: none;
+}
+
+.recommendation-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.recommendation-info {
+    flex: 1;
+}
+
+.recommendation-name {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.recommendation-artist {
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* ローディングアニメーション */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 3px solid #3498db;
+    animation: spin 1s linear infinite;
+    margin-right: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

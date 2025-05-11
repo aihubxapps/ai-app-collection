@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>TODO List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>My TODO List</h1>
+  
+  <div id="todoList"></div>
+  <input type="text" id="newTodoInput"
+         onkeydown="if (event.keyCode==13) addNewTodo()"
+         placeholder="New todo..." />
+  <button onclick="clearCompleted()">完了済みをクリア</button>
+  
+  <script src="scripts.js"></script>
+</body>
+</html>

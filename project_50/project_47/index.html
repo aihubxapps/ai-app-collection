@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マイダッシュボード</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>マイダッシュボード</h1>
+            <div class="progress-summary">
+                <div class="progress-circle">
+                    <svg viewBox="0 0 36 36">
+                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#eee" stroke-width="3"/>
+                        <path id="progress" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#3498db" stroke-width="3"/>
+                    </svg>
+                    <div class="progress-text">
+                        <span id="progressPercentage">0%</span>
+                        <span class="progress-label">完了</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="app-grid">
+                <h2>アプリ一覧</h2>
+                <div class="grid" id="appGrid">
+                    <!-- アプリカードがここに表示されます -->
+                </div>
+            </section>
+            <section class="stats-section">
+                <h2>進捗状況</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value" id="totalApps">0</div>
+                        <div class="stat-label">総アプリ数</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="completedApps">0</div>
+                        <div class="stat-label">完了済み</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="inProgressApps">0</div>
+                        <div class="stat-label">進行中</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

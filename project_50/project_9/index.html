@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>画像プレビューアプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🖼️ 画像プレビューアプリ</h1>
+
+    <section>
+        <h2>📂 ローカルファイルから表示</h2>
+        <input type="file" id="fileInput" accept="image/*">
+        <div class="preview-container">
+            <img id="filePreview" alt="ローカル画像プレビュー">
+        </div>
+    </section>
+
+    <section>
+        <h2>🌐 URLから表示</h2>
+        <input type="text" id="urlInput" placeholder="画像URLを入力">
+        <button onclick="loadImage()">表示</button>
+        <div class="preview-container">
+            <img id="urlPreview" alt="URL画像プレビュー">
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

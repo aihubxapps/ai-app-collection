@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI美女画像ビューア</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI美女画像ビューア</h1>
+        <div class="main-content">
+            <div class="controls">
+                <div class="upload-section">
+                    <input type="file" id="imageUpload" accept="image/*" multiple>
+                    <button id="uploadButton">画像をアップロード</button>
+                </div>
+                <div class="filter-section">
+                    <input type="text" id="tagFilter" placeholder="タグで検索...">
+                    <div class="tag-list" id="tagList">
+                        <!-- タグがここに表示されます -->
+                    </div>
+                </div>
+            </div>
+            <div class="gallery" id="gallery">
+                <!-- 画像がここに表示されます -->
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img id="modalImage" src="" alt="拡大画像">
+            <div class="image-info">
+                <div class="image-tags" id="modalTags"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+# ignore対象作業用フォルダ
+
+project_50/sandbox/
+
+# システム・エディタファイル
+.DS_Store
+Thumbs.db
+.vscode/

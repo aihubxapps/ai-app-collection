@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini API活用アプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gemini API活用アプリ</h1>
+        <div class="main-content">
+            <div class="input-section">
+                <textarea id="promptInput" placeholder="プロンプトを入力..."></textarea>
+                <button id="submitButton">送信</button>
+            </div>
+            <div class="output-section">
+                <div class="response-container">
+                    <h2>レスポンス</h2>
+                    <div id="responseContent" class="response-content">
+                        <!-- レスポンスがここに表示されます -->
+                    </div>
+                </div>
+                <div class="error-container" id="errorContainer" style="display: none;">
+                    <h2>エラー</h2>
+                    <div id="errorContent" class="error-content">
+                        <!-- エラーメッセージがここに表示されます -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/dotenv@16.0.3/lib/main.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

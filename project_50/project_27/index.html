@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ホロスコープビジュアライザー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ホロスコープビジュアライザー</h1>
+        <div class="input-section">
+            <div class="date-input">
+                <label for="birthDate">生年月日:</label>
+                <input type="date" id="birthDate">
+            </div>
+            <button id="calculateButton">計算</button>
+        </div>
+        <div class="horoscope-display">
+            <canvas id="horoscopeCanvas"></canvas>
+            <div class="planet-positions"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

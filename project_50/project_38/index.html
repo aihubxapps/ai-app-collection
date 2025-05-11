@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ニュース要約表示</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ニュース要約表示</h1>
+        <div class="main-content">
+            <div class="input-section">
+                <input type="text" id="rssUrlInput" placeholder="RSSフィードのURLを入力...">
+                <button id="fetchButton">取得</button>
+            </div>
+            <div class="news-list" id="newsList">
+                <!-- ニュース一覧がここに表示されます -->
+            </div>
+        </div>
+        <div class="modal" id="summaryModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>記事の要約</h2>
+                    <button class="close-button" id="closeModal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div id="summaryContent">
+                        <!-- 要約がここに表示されます -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/dotenv@16.0.3/lib/main.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

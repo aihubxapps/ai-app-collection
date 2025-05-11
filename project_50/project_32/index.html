@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プロットカード並べ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>プロットカード並べ</h1>
+        <div class="main-content">
+            <div class="card-board">
+                <div id="cardContainer"></div>
+            </div>
+            <div class="card-list">
+                <h2>カード一覧</h2>
+                <div id="cardList"></div>
+            </div>
+        </div>
+        <div class="card-editor">
+            <h2>カード編集</h2>
+            <div class="editor-form">
+                <input type="text" id="cardTitle" placeholder="タイトル">
+                <textarea id="cardContent" placeholder="詳細"></textarea>
+                <div class="button-group">
+                    <button id="addCardButton">カードを追加</button>
+                    <button id="saveButton">保存</button>
+                    <button id="loadButton">読み込み</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

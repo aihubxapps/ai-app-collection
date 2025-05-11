@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>診断メーカー風ミニアプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>診断メーカー風ミニアプリ</h1>
+        <div class="main-content">
+            <div class="editor-section">
+                <h2>診断の設定</h2>
+                <div class="question-list" id="questionList">
+                    <!-- 質問がここに追加されます -->
+                </div>
+                <button id="addQuestionButton" class="add-button">質問を追加</button>
+                <div class="result-settings">
+                    <h3>結果の設定</h3>
+                    <div id="resultList">
+                        <!-- 結果がここに追加されます -->
+                    </div>
+                    <button id="addResultButton" class="add-button">結果を追加</button>
+                </div>
+                <div class="button-group">
+                    <button id="saveButton">保存</button>
+                    <button id="previewButton">プレビュー</button>
+                </div>
+            </div>
+            <div class="preview-section" id="previewSection" style="display: none;">
+                <h2>診断プレビュー</h2>
+                <div class="diagnosis-container">
+                    <div id="questionDisplay"></div>
+                    <div id="resultDisplay" style="display: none;">
+                        <div class="result-content">
+                            <h3>診断結果</h3>
+                            <div id="resultText"></div>
+                            <div id="resultImage"></div>
+                        </div>
+                        <div class="share-section">
+                            <button id="shareButton">結果をシェア</button>
+                            <div id="shareUrl"></div>
+                        </div>
+                    </div>
+                </div>
+                <button id="backToEditButton">編集に戻る</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

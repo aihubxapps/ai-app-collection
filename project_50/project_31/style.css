@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.input-section {
+    margin-bottom: 30px;
+}
+
+.element-input {
+    display: grid;
+    gap: 15px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.flowchart-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    min-height: 400px;
+    position: relative;
+}
+
+#flowchart {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.flowchart-element {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: move;
+    position: relative;
+}
+
+.element-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.element-note {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.element-tags {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.element-tag {
+    background-color: #e1f0fa;
+    color: #3498db;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+}
+
+.element-actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.element-action {
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 1em;
+}
+
+.element-action:hover {
+    color: #e74c3c;
+}
+
+.button-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+#exportJsonButton {
+    background-color: #2ecc71;
+}
+
+#exportJsonButton:hover {
+    background-color: #27ae60;
+}
+
+#exportTextButton {
+    background-color: #e74c3c;
+}
+
+#exportTextButton:hover {
+    background-color: #c0392b;
+}
+
+.dragging {
+    opacity: 0.5;
+    cursor: grabbing;
+}
+
+.placeholder {
+    background-color: #f1f1f1;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    height: 100px;
+    margin: 10px 0;
+}

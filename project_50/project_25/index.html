@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>シンプルパスワード生成</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>シンプルパスワード生成</h1>
+        <div class="password-options">
+            <div class="option">
+                <label for="length">パスワードの長さ:</label>
+                <input type="number" id="length" min="4" max="32" value="12">
+            </div>
+            <div class="option">
+                <label>
+                    <input type="checkbox" id="uppercase" checked>
+                    大文字を含める
+                </label>
+            </div>
+            <div class="option">
+                <label>
+                    <input type="checkbox" id="numbers" checked>
+                    数字を含める
+                </label>
+            </div>
+            <div class="option">
+                <label>
+                    <input type="checkbox" id="symbols" checked>
+                    記号を含める
+                </label>
+            </div>
+        </div>
+        <div class="password-output">
+            <input type="text" id="password" readonly>
+            <button id="generateButton">生成</button>
+            <button id="copyButton">コピー</button>
+        </div>
+        <div class="password-strength">
+            <div class="strength-label">パスワード強度:</div>
+            <div class="strength-meter">
+                <div class="strength-bar"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

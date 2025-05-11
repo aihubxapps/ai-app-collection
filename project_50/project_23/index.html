@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>シンプルQRコード生成</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode.js@1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>シンプルQRコード生成</h1>
+        <div class="input-section">
+            <input type="text" id="qrInput" placeholder="QRコードに変換するテキストを入力">
+            <button id="generateButton">生成</button>
+        </div>
+        <div class="output-section">
+            <div id="qrcode"></div>
+            <button id="downloadButton" style="display: none;">ダウンロード</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

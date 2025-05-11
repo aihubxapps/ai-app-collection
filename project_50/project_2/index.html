@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>メモ帳アプリ</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <textarea id="editor"></textarea>
+    <div class="button-group">
+        <button onclick="save()">ブラウザ保存</button>
+        <button onclick="download()">ファイル保存</button>
+        <button onclick="clearEditor()">クリア</button>
+        <input type="file" id="myFile" onchange="load()">
+    </div>
+
+
+  </body>
+  <script src="script.js"></script>
+</html>

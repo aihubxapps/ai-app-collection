@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>シンプルスケジュール帳</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>シンプルスケジュール帳</h1>
+        <div class="calendar">
+            <div class="calendar-header">
+                <button id="prevMonth">&lt;</button>
+                <h2 id="currentMonth"></h2>
+                <button id="nextMonth">&gt;</button>
+            </div>
+            <div class="weekdays">
+                <div>日</div>
+                <div>月</div>
+                <div>火</div>
+                <div>水</div>
+                <div>木</div>
+                <div>金</div>
+                <div>土</div>
+            </div>
+            <div id="calendarGrid"></div>
+        </div>
+        <div class="schedule-input" id="scheduleInput" style="display: none;">
+            <h3>予定の入力</h3>
+            <div class="selected-date"></div>
+            <textarea id="scheduleText" placeholder="予定を入力してください"></textarea>
+            <button id="saveSchedule">保存</button>
+            <button id="cancelSchedule">キャンセル</button>
+        </div>
+        <div class="today-schedule">
+            <h3>今日の予定</h3>
+            <div id="todayScheduleList"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

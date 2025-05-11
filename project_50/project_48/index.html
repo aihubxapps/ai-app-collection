@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>記録データビジュアライザ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>記録データビジュアライザ</h1>
+        <div class="main-content">
+            <div class="controls">
+                <div class="import-section">
+                    <input type="file" id="fileInput" accept=".json,.csv">
+                    <button id="importButton">データをインポート</button>
+                </div>
+                <div class="chart-controls">
+                    <select id="chartType">
+                        <option value="pie">円グラフ</option>
+                        <option value="bar">棒グラフ</option>
+                    </select>
+                    <select id="dataType">
+                        <option value="category">カテゴリ別</option>
+                        <option value="time">時間別</option>
+                    </select>
+                </div>
+            </div>
+            <div class="chart-container">
+                <canvas id="dataChart"></canvas>
+            </div>
+            <div class="data-summary">
+                <h2>データサマリー</h2>
+                <div class="summary-grid">
+                    <div class="summary-card">
+                        <div class="summary-value" id="totalRecords">0</div>
+                        <div class="summary-label">総レコード数</div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-value" id="uniqueCategories">0</div>
+                        <div class="summary-label">カテゴリ数</div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-value" id="dateRange">-</div>
+                        <div class="summary-label">期間</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

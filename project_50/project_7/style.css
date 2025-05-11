@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.form-container {
+    width: 50%;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+label, input, button {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.tracker h2 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="checkbox"]:checked + label {
+    color: green;
+}
+
+input[type="checkbox"] ~ label {
+    color: red;
+}

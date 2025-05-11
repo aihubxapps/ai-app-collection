@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日替わり名言ジェネレーター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>日替わり名言ジェネレーター</h1>
+        <div class="main-content">
+            <div class="quote-section">
+                <div class="quote-card">
+                    <div class="quote-text" id="quoteText">
+                        <!-- 名言がここに表示されます -->
+                    </div>
+                    <div class="quote-author" id="quoteAuthor">
+                        <!-- 作者がここに表示されます -->
+                    </div>
+                </div>
+                <div class="controls">
+                    <button id="randomButton">ランダム表示</button>
+                    <button id="todayButton">今日の名言</button>
+                </div>
+            </div>
+            <div class="custom-section">
+                <h2>カスタム名言の追加</h2>
+                <div class="input-group">
+                    <textarea id="customQuote" placeholder="名言を入力..."></textarea>
+                    <input type="text" id="customAuthor" placeholder="作者名">
+                    <button id="addButton">追加</button>
+                </div>
+                <div class="custom-quotes" id="customQuotes">
+                    <!-- カスタム名言リストがここに表示されます -->
+                </div>
+            </div>
+            <div class="share-section">
+                <button id="shareButton">シェアする</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

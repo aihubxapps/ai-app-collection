@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介カードジェネレータ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>自己紹介カードジェネレータ</h1>
+        <div class="main-content">
+            <div class="input-section">
+                <div class="input-group">
+                    <label for="name">名前</label>
+                    <input type="text" id="name" placeholder="あなたの名前">
+                </div>
+                <div class="input-group">
+                    <label for="occupation">職業</label>
+                    <input type="text" id="occupation" placeholder="あなたの職業">
+                </div>
+                <div class="input-group">
+                    <label for="hobbies">趣味</label>
+                    <textarea id="hobbies" placeholder="趣味を入力（改行で区切って複数入力可能）"></textarea>
+                </div>
+                <div class="template-section">
+                    <h2>デザインテンプレート</h2>
+                    <div class="template-grid">
+                        <div class="template-item" data-template="modern">
+                            <div class="template-preview modern"></div>
+                            <span>モダン</span>
+                        </div>
+                        <div class="template-item" data-template="minimal">
+                            <div class="template-preview minimal"></div>
+                            <span>ミニマル</span>
+                        </div>
+                        <div class="template-item" data-template="colorful">
+                            <div class="template-preview colorful"></div>
+                            <span>カラフル</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="preview-section">
+                <h2>プレビュー</h2>
+                <div id="cardPreview" class="card-preview">
+                    <div class="card-content">
+                        <div class="name"></div>
+                        <div class="occupation"></div>
+                        <div class="hobbies"></div>
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button id="downloadButton">画像をダウンロード</button>
+                    <button id="shareButton">SNSでシェア</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ランダム表情ジェネレータ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ランダム表情ジェネレータ</h1>
+        <div class="main-content">
+            <div class="generator-section">
+                <div class="image-container">
+                    <div id="imageDisplay" class="image-display">
+                        <div class="placeholder">画像を生成してください</div>
+                    </div>
+                    <div id="imageDescription" class="image-description"></div>
+                </div>
+                <div class="button-group">
+                    <button id="generateButton">生成</button>
+                    <button id="favoriteButton">お気に入りに追加</button>
+                </div>
+            </div>
+            <div class="favorites-section">
+                <h2>お気に入り一覧</h2>
+                <div id="favoritesList" class="favorites-list">
+                    <!-- お気に入りがここに追加されます -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>シンプル天気予報</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>シンプル天気予報</h1>
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="都市名を入力">
+            <button id="searchButton">検索</button>
+        </div>
+        <div class="weather-info">
+            <div id="weatherDisplay" class="weather-display">
+                <div class="city-name"></div>
+                <div class="temperature"></div>
+                <div class="weather-description"></div>
+                <div class="weather-details">
+                    <div class="humidity"></div>
+                    <div class="wind"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

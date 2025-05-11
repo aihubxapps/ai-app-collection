@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: #e6e6e6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: #16213e;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #0f3460;
+    font-size: 2rem;
+}
+
+.input-section {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.date-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #e6e6e6;
+}
+
+input[type="date"] {
+    padding: 8px;
+    border: 2px solid #0f3460;
+    border-radius: 5px;
+    background-color: #16213e;
+    color: #e6e6e6;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #0f3460;
+    color: #e6e6e6;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1a1a2e;
+}
+
+.horoscope-display {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+canvas {
+    width: 100%;
+    height: auto;
+    background-color: #16213e;
+    border-radius: 10px;
+}
+
+.planet-positions {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    text-align: left;
+}
+
+.planet-position {
+    background-color: #0f3460;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
